@@ -25,5 +25,5 @@ zerops:
         - pipenv --version
         - zsc scale ram max 10m
         - sleep 60
-        - pipenv install
+        - pipenv install --system
       start: zsc noop # pipenv run ./docs_scraper ./test.json

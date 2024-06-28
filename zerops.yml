@@ -18,7 +18,6 @@ zerops:
     run:
       base: python@3.11
       envVariables:
-        MEILISEARCH_API_KEY: c8f5b89c64aacb12345ced6c90920286ca5efcfb0c21f61afa6dbd70b5e71363
         MEILISEARCH_HOST_URL: http://meilisearch:7700
       prepareCommands:
         - pip install --user pipenv

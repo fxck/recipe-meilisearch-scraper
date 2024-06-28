@@ -19,7 +19,6 @@ zerops:
       base: python@3.11
       prepareCommands:
         - pip install --user pipenv
-        - cat $HOME/.profile
         - echo "export PATH='$HOME/.local/bin:$PATH'" > $HOME/.profile
         - echo "export PATH="$HOME/.local/bin:$PATH'" > /home/zerops/.profile
         - pipenv --version

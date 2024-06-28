@@ -4,6 +4,7 @@ zerops:
       buildCommnads:
         - rm -rf *
         - https://github.com/meilisearch/docs-scraper .
+        - ls -la
       addToRunPrepare:
         - Pipfile
         - Pipfile.lock

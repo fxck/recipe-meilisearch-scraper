@@ -1,0 +1,5 @@
+services:
+  - hostname: scraper
+    type: ubuntu@22.04
+    enableSubdomainAccess: true
+    buildFromGit: https://github.com/fxck/recipe-meilisearch-scraper

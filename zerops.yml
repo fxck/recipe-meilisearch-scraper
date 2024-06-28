@@ -1,7 +1,7 @@
 zerops:
   - setup: scraper
     build:
-      buildCommnads:
+      buildCommands:
         - rm -rf *
         - git clone https://github.com/meilisearch/docs-scraper .
         - ls -la

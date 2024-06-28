@@ -1,0 +1,14 @@
+zerops:
+  - setup: scraper
+    build:
+      buildCommnads:
+        - rm -rf *
+        - https://github.com/meilisearch/docs-scraper .
+      addToRunPrepare:
+        - Pipfile
+        - Pipfile.lock
+      deployFiles: ./
+    run:
+      prepareCommands:
+        - pipenv install
+      start: pipenv run ./docs_scraper ./test.json

@@ -9,6 +9,7 @@ zerops:
         - Pipfile.lock
       deployFiles: ./
     run:
+      base: python@3.8
       prepareCommands:
         - pipenv install
       start: pipenv run ./docs_scraper ./test.json

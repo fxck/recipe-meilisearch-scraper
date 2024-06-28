@@ -19,8 +19,8 @@ zerops:
       base: python@3.11
       prepareCommands:
         - pip install --user pipenv
-        - |
-          export PATH="$HOME/.local/bin:$PATH"
-          pipenv --version
-          pipenv install
+        - echo PATH="$HOME/.local/bin:$PATH" > $HOME/.profile
+        - echo PATH="$HOME/.local/bin:$PATH" > /home/zerops/.profile
+        - pipenv --version
+        - pipenv install
       start: pipenv run ./docs_scraper ./test.json

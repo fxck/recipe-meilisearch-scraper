@@ -27,6 +27,6 @@ zerops:
         - zsc scale ram max 10m
         - sleep 30
         - pipenv install --system
-      initCommands:
-        - printf "%s" "$MEILISEARCH_SCAPER_CONFIG" > config.json
-      start: python ./docs_scraper ./config.json
+      # initCommands:
+      #   - printf "%s" "$MEILISEARCH_SCAPER_CONFIG" > config.json
+      start: zsc noop # python ./docs_scraper ./config.json

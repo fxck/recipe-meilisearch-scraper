@@ -3,7 +3,7 @@ zerops:
     build:
       buildCommnads:
         - rm -rf *
-        - https://github.com/meilisearch/docs-scraper .
+        - git clone https://github.com/meilisearch/docs-scraper .
         - ls -la
       addToRunPrepare:
         - Pipfile

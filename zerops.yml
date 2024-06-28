@@ -28,5 +28,5 @@ zerops:
         - sleep 30
         - pipenv install --system
       initCommands:
-        - echo "$MEILISEARCH_SCAPER_CONFIG" > config.json
+        - printf "%s" "$MEILISEARCH_SCAPER_CONFIG" > config.json
       start: python ./docs_scraper ./config.json

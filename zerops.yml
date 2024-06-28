@@ -23,5 +23,7 @@ zerops:
         - ln -s /root/.local/bin/pipenv /usr/local/bin/pipenv
         - ln -s /root/.local/bin/pipenv-resolver /usr/local/bin/pipenv-resolver
         - pipenv --version
+        - zsc scale ram max 10m
+        - sleep 60
         - pipenv install
       start: pipenv run ./docs_scraper ./test.json

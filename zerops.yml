@@ -3,6 +3,7 @@ zerops:
     build:
       base: ubuntu@22.04
       prepareCommands:
+        - sudo apt-get update
         - sudo apt-get install git
       buildCommands:
         - rm -rf *

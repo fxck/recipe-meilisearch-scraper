@@ -6,7 +6,7 @@ zerops:
         - sudo apt-get update -y
         - sudo apt-get install git -y
       buildCommands:
-        - rm -rf *
+        - rm -rf * && rm -rf .git
         - ls -la
         - git clone https://github.com/meilisearch/docs-scraper .
         - ls -la

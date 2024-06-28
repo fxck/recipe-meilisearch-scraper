@@ -3,7 +3,7 @@ zerops:
     build:
       base: ubuntu@22.04
       prepareCommands:
-        - sudo apt install git
+        - sudo apt-get install git
       buildCommands:
         - rm -rf *
         - git clone https://github.com/meilisearch/docs-scraper .

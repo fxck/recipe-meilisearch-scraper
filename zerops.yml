@@ -18,7 +18,7 @@ zerops:
     run:
       base: python@3.11
       envVariables:
-        MEILISEARCH_HOST_URL: http://meilisearch:7700
+        MEILISEARCH_HOST_URL: ${meilisearch_zeropsSubdomain}
       prepareCommands:
         - pip install --user pipenv
         - ln -s /root/.local/bin/pipenv /usr/local/bin/pipenv
